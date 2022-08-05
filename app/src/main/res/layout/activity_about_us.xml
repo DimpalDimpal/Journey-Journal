@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:id="@+id/scrollView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#45B39D"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="left"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:noHistory="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:layout_marginTop="-28dp"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:scrollbarStyle="insideOverlay"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/jjlogo_withbg"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/JourneyJournal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/top_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Journey Journal"
+            android:textColor="#45B39D"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:id="@+id/ourDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/JourneyJournal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/aboutUs"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18dp"
+
+            />
+
+        <TextView
+            android:id="@+id/reasonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ourDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Reasons to choose Journey Journal"
+            android:textColor="#45B39D"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/reasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/reasonTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/reasons"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18dp"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/developedByTitle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/reasons"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:text="Developed by"-->
+<!--            android:textColor="#45B39D"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5dp"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/developerImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/developedByTitle"-->
+<!--            android:src="@drawable/ic_add_foreground"-->
+<!--            android:background="@drawable/developer_bg"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/developerInfo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toRightOf="@+id/developerImage"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/developedByTitle"-->
+<!--            android:text="@string/developerInfo"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/contactUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/reasons"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Contact Us"
+            android:textColor="#45B39D"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/contactUsTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            >
+            <ImageView
+                android:id="@+id/icFacebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reasons"
+                android:src="@drawable/facebook"
+                android:background="@drawable/developer_bg"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                />
+            <ImageView
+                android:id="@+id/icLinkedin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reasons"
+                android:src="@drawable/linkedin"
+                android:background="@drawable/developer_bg"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                />
+            <ImageView
+                android:id="@+id/icInstagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reasons"
+                android:src="@drawable/instagram"
+                android:background="@drawable/developer_bg"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                />
+            <ImageView
+                android:id="@+id/icTwitter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reasons"
+                android:src="@drawable/twitter"
+                android:background="@drawable/developer_bg"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

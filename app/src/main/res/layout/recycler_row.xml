@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="0dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lJournal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/jTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:padding="8dp"
+            android:text="Journal Title"
+            android:textColor="#45B39D"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            app:layout_constraintTop_toTopOf="@id/lJournal"
+
+            />
+
+        <TextView
+            android:id="@+id/jDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:padding="8dp"
+            android:text="Journal Date"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/jTitle"
+            app:layout_constraintTop_toTopOf="@id/jTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/jTitle"
+
+            />
+
+
+        <TextView
+            android:id="@+id/jDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:padding="8dp"
+            android:text="Journal Description"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/jDate"
+            android:layout_marginEnd="50dp"
+            />
+
+        <ImageButton
+            android:id="@+id/icShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/jDesc"
+            app:layout_constraintTop_toTopOf="@+id/jDesc"
+            app:layout_constraintBottom_toBottomOf="@+id/jDesc"
+            android:src="@drawable/ic_share"
+            android:padding="10dp"
+            android:background="@color/white"
+            />
+
+
+        <ImageView
+            android:id="@+id/loadRImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_add_foreground"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lJournal"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

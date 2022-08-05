@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Journey Journal</string>
+    <string name="registration">Registration</string>
+    <string name="fullName">Full Name</string>
+    <string name="description">Description</string>
+    <string name="image">Image</string>
+    <string name="add_image">Add Image</string>
+    <string name="loginHere"><u>Login Here</u></string>
+    <string name="registerHere"><u>Register here</u></string>
+    <string name="btnlogIn">Log In</string>
+    <string name="logIn">Log In</string>
+    <string name="issueJourney">Add your new journey experience</string>
+    <string name="title">Title</string>
+    <string name="save">Save</string>
+    <string name="map">Map</string>
+    <string name="editJourney">Edit your journey experience</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Sign Up</string>
+    <string name="empty_not_saved">Journal not saved because it is empty.</string>
+    <string name="aboutUs">Captures your different memorable moments and creates a memory for lifelong.\n\n
+        We\’re more than just a journal, or a diary; we\’re your own memories.\n\n
+        Let\'s embark on a fabulous journey of your travel.
+
+    </string>
+    <string name="reasons">- Want a place to private your journey memory,\n\n
+                            - Want to pour your feelings/brain dump,\n\n
+                            - Struggle to maintain your journey journaling,\n\n
+                            - Track the best memories made in journey.</string>
+    <string name="developerInfo">Dimple Kadayat\n\t
+                                dimpal.kadayat@gmail.com\n\t
+                                +977-9845574773</string>
+
+
+    <!-- The default font for RecyclerView items is too small.
+    The margin is a simple delimiter between the words. -->
+    <style name="rv_design">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+    </style>
+</resources>

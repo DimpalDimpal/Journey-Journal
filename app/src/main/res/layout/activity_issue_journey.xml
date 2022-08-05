@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:id="@+id/scrollView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".issueJourneyActivity"
+    android:background="@drawable/reg_bg"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        >
+        <ImageView
+            android:id="@+id/icBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/jHeading"
+            android:noHistory="true"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/jHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Journey Memories"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/light_white"
+            android:layout_marginStart="40dp"
+            app:layout_constraintLeft_toRightOf="@+id/icBack"
+            app:layout_constraintTop_toTopOf="@+id/icBack" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:hint="Enter the title of the journey"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/inputtxt_bg"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_title"
+            app:layout_constraintTop_toBottomOf="@id/jHeading" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="Your thoughts about journey"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/inputtxt_bg"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_des"
+            app:layout_constraintTop_toBottomOf="@id/edtTitle" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/loadLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/edtDesc"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/displayLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:padding="10dp"
+                android:text="Location"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/inputtxt_bg"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/addLocation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:elevation="3dp"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/ic_baseline_add_location_24" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/DatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loadLocation"
+            android:background="@drawable/inputtxt_bg"
+            android:drawableEnd="@drawable/ic_daterange"
+            />
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/DatePicker"
+
+            android:text="Add Image"
+            android:layout_marginTop="66dp"
+            android:layout_marginStart="26dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            />
+
+        <ImageView
+            android:id="@+id/loadImage"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:layout_constraintLeft_toRightOf="@id/btn_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DatePicker"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/image_border"
+            android:src="@drawable/ic_img"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btn_bg"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:textSize="20dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loadImage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
